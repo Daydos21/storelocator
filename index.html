@@ -139,7 +139,19 @@ body {
 		<div id='map' class='map'></div>
 
 <script>
-
+	
+mapboxgl.accessToken = 'pk.eyJ1IjoiamFzb25rYXJpbSIsImEiOiJja3p4bGM5NXgwMmxlMndwN3V1dzRiZjFrIn0.KRF4ylE3EPgIdfJQmbCgSw';
+      /**
+       * Add the map to the page
+      */
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/light-v10',
+        center: [-122.241514, 38.015860],
+        zoom: 9,
+        scrollZoom: false
+      });
+	
 </script>
   </body>
 </html>
