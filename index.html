@@ -70,14 +70,15 @@
   }
 </style>  
 	
-<script>
-  mapboxgl.accessToken = 'pk.eyJ1IjoiamFzb25rYXJpbSIsImEiOiJja3p4bGM5NXgwMmxlMndwN3V1dzRiZjFrIn0.KRF4ylE3EPgIdfJQmbCgSw';
 
-  const map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/light-v10',
-    center: [-77.034084, 38.909671],
-    zoom: 13,
-    scrollZoom: false
+<div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiamFzb25rYXJpbSIsImEiOiJja3p4bGM5NXgwMmxlMndwN3V1dzRiZjFrIn0.KRF4ylE3EPgIdfJQmbCgSw';
+const map = new mapboxgl.Map({
+container: 'map', // container ID
+style: 'mapbox://styles/mapbox/streets-v11', // style URL
+center: [-74.5, 40], // starting position [lng, lat]
+zoom: 9 // starting zoom
 });
+
 </script>
